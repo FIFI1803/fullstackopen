@@ -8,7 +8,7 @@ const App = () => {
   const exercises1 = 10
   const part2 = 'Using props to pass data'
   const exercises2 = 7
-  const part3 = 'Stat of a component'
+  const part3 = 'State of a component'
   const exercises3 = 14
   
   return (
