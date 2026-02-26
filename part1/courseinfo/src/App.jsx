@@ -3,8 +3,9 @@ import Header from "./components/Header"
 import TotalExercises from "./components/TotalExercises"
 
 const App = () => {
-  const course = 'Half Stack application development'
-  const parts = [ 
+  const course = {
+  name: 'Half Stack application development',
+  parts : [ 
   {
     name: 'Fundamentals of React',
     exercises: 10
@@ -18,12 +19,12 @@ const App = () => {
     exercises: 14
   }
   ]
-  
+} 
   return (
     <div>
-      <Header course={course} />
-      <Content parts={parts} />
-      <TotalExercises parts={parts} />
+      <Header course={course.name} />
+      <Content parts={course.parts} />
+      <TotalExercises parts={course.parts} />
     </div>
   )
 }
